@@ -75,6 +75,12 @@ If Supabase env vars are empty, the bot still saves to `data/intel.sqlite3`.
 
 Then open the bot in Telegram and send `/start`.
 
+## Railway
+
+Railpack needs a start command. This repo has `railway.toml`, `railpack.json`, `Procfile`, and `main.py`. Start command is `python run.py`.
+
+This is a Telegram polling worker, not a website. Set `TELEGRAM_BOT_TOKEN` in Railway Variables. Do not commit `.env`. Optional: `XAI_API_KEY`, `SUPABASE_URL`, `SUPABASE_SERVICE_KEY`, `ALLOWED_USER_IDS`.
+
 ## CLI (no Telegram token needed)
 
 ```powershell
