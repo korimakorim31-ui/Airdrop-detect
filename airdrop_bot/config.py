@@ -28,6 +28,7 @@ DAILY_PICK_LIMIT = max(3, int(os.getenv("DAILY_PICK_LIMIT", "10")))
 SUPABASE_URL = os.getenv("SUPABASE_URL", "").strip()
 SUPABASE_KEY = (
     os.getenv("SUPABASE_SERVICE_KEY", "").strip()
+    or os.getenv("SUPABASE_SECRET_KEY", "").strip()
     or os.getenv("SUPABASE_KEY", "").strip()
 )
 
